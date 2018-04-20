@@ -1,60 +1,20 @@
-<!DOCTYPE html>
-<html>
+ <?php add_theme_support( $feature ); ?>
+<?php get_header(); ?>
+<div class="container">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
-
-    <title>Welcome!</title>
-</head>
-
-<body>
-    <div class="wrapper">
-        <div id="header">
-            <nav class="navbar-nav navbar-expand-lg">
-                <div class="container">
-                    <div id="logo">
-                        <h1>Hungry Bytes</h1>
-                    </div>
-                    <div id="divider">
-                        <h1> | </h1>
-                    </div>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="menu">
-                        <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#aboutnav" class="btn">about us <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#projectnav" class="btn">projects</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#servicenav" class="btn">services</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#contactnav" class="btn">contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div id="socials">
-                        <ul>
-                            <li><a href="#" class="fa fa-facebook"></a></li>
-                            <li><a href="#" class="fa fa-twitter"></a></li>
-                            <li><a href="#" class="fa fa-google"></a></li>
-                        </ul>
-                    </div>
-                    <div class="clear"></div>
-
-                </div>
-            </nav>
-        </div>
-
+<?php
+    if ( have_posts() ) :
+        while ( have_posts() ) :
+            the_post();
+// the_title();
+the_content();
+        endwhile; // end while
+    endif; // end if
+?>
+<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
+   <!-- Post stuff -->
+</div>
+<!-- </div>
         <div>
             <div id="segment1">
                 <div class="container">
@@ -78,7 +38,7 @@
         <div class="row">
 
             <div id="features" class="col-lg">
-                <img src="img/icon-service-1.png">
+                <img <?php echo esc_url( get_template_directory_uri() ) ;?>/img/icon-service-1.png">
                 <h3>Responsive Design</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
             </div>
@@ -134,28 +94,28 @@
                 <div class="row">
                     <div id="team" class="col-lg">
                         <div>
-                            <img src="img/corgi.jpg">
+                            <img src="<?php echo esc_url( get_template_directory_uri() ) ; ?>/img/corgi.jpg">
                             <h3>Best Boii</h3>
                         </div>
                         <p> UX Engineer</p>
                     </div>
                     <div id="team" class="col-lg">
                         <div>
-                            <img src="img/corgi.jpg">
+                            <img src="<?php echo esc_url( get_template_directory_uri() ) ; ?>/img/corgi.jpg">
                             <h3>Best Boii</h3>
                         </div>
                         <p> UX Engineer</p>
                     </div>
                     <div id="team" class="col-lg">
                         <div>
-                            <img src="img/corgi.jpg">
+                            <img src="<?php echo esc_url( get_template_directory_uri() ) ; ?>/img/corgi.jpg">
                             <h3>Best Boii</h3>
                         </div>
                         <p> UX Engineer</p>
                     </div>
                     <div id="team" class="col-lg">
                         <div>
-                            <img src="img/corgi.jpg">
+                            <img src="<?php echo esc_url( get_template_directory_uri() ) ; ?>/img/corgi.jpg">
                             <h3>Best Boii</h3>
                         </div>
                         <p> UX Engineer</p>
@@ -219,66 +179,5 @@
                 </form>
             </div>
         </div>
-    </div>
-    <div id="sub-footer">
-        <div class="container">
-            <div id="sub-content">
-                <div class="row">
-                    <div class="col-sm">
-                        <div id="blogContent">
-                            <h4>Hungry Bytes</h4>
-                            <p> &copy; 2018 - All Rights Reserved </p>
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <div id="blogContent1">
-                            <h4>About Us.</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <div id="blogContent1">
-                            <h4>KNOW MORE</h4>
-                            <ul id="quickLinks">
-                                <li><a href="#">Terms &amp; Conditions</a></li>
-                                <li><a href="#">TAQ</a></li>
-                                <li><a href="#">Pricing</a></li>
-                                <li><a href="#">Services</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <div id="blogContent1">
-                            <h4>Connect</h4>
-                            <div id="footerSocials">
-                                <ul>
-                                    <li><a href="#" class="fa fa-facebook"></a>Facebook</li>
-                                    <li><a href="#" class="fa fa-twitter"></a>Twitter</li>
-                                    <li><a href="#" class="fa fa-google"></a>Google Plus</li>
-                                </ul>
-                            </div>
-                            <div class="clear"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-
-                });
-            });
-        })
-    </script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
-
-</html>
+    </div> -->
+    <?php get_footer(); ?>
