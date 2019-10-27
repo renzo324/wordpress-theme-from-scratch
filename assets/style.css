@@ -1,0 +1,331 @@
+/*
+Theme Name: Dungeon Mastery
+Theme URI: https://github.com/renzo324/wordpress-theme-from-scratch
+Author: Lorenzo Ibay
+Author URI: https://github.com/renzo324
+Description: Theme for running Dungeons and dragons Campaigns
+Version: 1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: Dungeon Mastery
+Tags: custom-background
+*/
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,600');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
+h1{
+	font-size: 23px;
+	color: #575757;
+}
+
+a{
+	margin: 0 1px;
+}
+
+/* .wp-caption{
+
+}
+.wp-caption-text{
+
+}
+.sticky{}
+.screen-reader-text{}
+.gallery-caption{}
+.bypostauthor{}
+.alignright{}
+.alignleft{}
+.aligncenter{} */
+.size-auto, 
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+	max-width: 100%;
+	height: auto;
+}
+.wrapper{
+	background: url(img/bg.jpg) !important;
+}
+.clear{
+	clear: both;
+}
+.container{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.fill { 
+    min-height: 100%;
+    height: 100%;
+}
+.navbar-nav{
+	/*background: #d9dbdd;*/
+	color: #cacdd1;
+}
+
+.gradientbg{
+	height: 100px;
+	width: auto;
+  background: linear-gradient(#d9dbdd, #ffffff);
+}
+.gradientbgreverse{
+	height: 100px;
+	width: auto;
+  background: linear-gradient(#ffffff, #d9dbdd);
+}
+.content{
+	background: #d9dbdd;
+}
+#logo{
+	font-family: 'Raleway', serif;
+	float: left;
+	margin-top: 25px;
+	color: #cacdd1;
+}
+#logo h1{
+	font-family: 'Raleway', serif;
+	font-weight: 300;
+	color: #ffffff;
+}
+#divider h1{
+	font-family: 'Raleway', serif;
+	float: left;
+	margin: 25px 10px 0 10px; 
+	color: #ffffff;
+}
+#menu{
+	font-family: 'Raleway', serif;
+	float: left;
+}
+#menu ul{
+	float: left;
+	margin-top: 21px;
+}
+#menu ul li{
+	float: right;
+}
+#menu ul li a{
+	padding: 10px 13px;
+	color: #efefef;
+	text-decoration: none; 
+	font-size: 13px;
+	text-transform: capitalize;
+	font-weight: 400;
+}
+#socials{
+	font-family: 'Raleway', serif;
+	float: right;
+}
+#socials ul{
+	float: right;
+	margin-top: 21px;
+}
+#socials ul li{
+	float: left;
+}
+#socials ul li a{
+	padding: 10px;
+	margin: 0 10px;
+	color: #575757 ;
+	text-decoration: none; 
+	font-size: 13px;
+	background-color: #ffffff;
+	border-radius: 100%;
+}
+
+#segment1{
+	padding: 120px 0;
+	position:relative;
+}
+#hero{
+	font-family: ubuntu, serif;
+	padding: 15% 35px;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	color: #fcfcfc;
+
+}
+#hero h2{
+	font-weight: 700;
+	margin-bottom: 20px;
+	
+}
+#featrow{
+	margin: 50px 100px;
+	background-color: #ffffff;
+
+}
+#services{
+	padding: 20px;
+	width: 100%;
+	margin: 10% auto 15%;
+	text-align: center;
+}
+#features{
+	text-align: center;
+	margin: 30px;
+}
+#features img{
+	margin-bottom: 80px;
+}
+#features h3{
+	font-size: 1.5rem;
+}
+
+#features p{
+	font-size: 1rem;
+}
+#projects{
+	padding: 25px 35px;
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;	
+}
+#projects h2{
+	font-weight: 600;
+	/*font-size: 20px;*/
+	margin-bottom: 20px;
+	color: #454546;
+	text-transform: uppercase;
+}
+#projects p{
+	color: #767676;
+	margin: 10px 10px 50px 10px;
+}
+
+#theTeam{
+	padding: 20px;
+	width: 100%;
+	margin: 10% auto 15%;
+	text-align: center;	
+}
+#theTeam h2{
+	font-weight: 600;
+	font-size: 30px;
+	margin-bottom: 15%;
+	color: #454546;
+	text-transform: uppercase;
+}
+#team img{
+	height: 200px;
+	width: auto;
+	margin-bottom: 40px;
+}
+#team h3{
+	font-weight: 400;
+	font-size: 15px;
+	margin-bottom: 20px;
+	color: #515152;
+	text-transform: uppercase;
+}
+#team p{
+	color: #5d5d5e;
+	font-size: 14px;
+}
+#team a{
+	float: right;
+	text-align: right;
+}
+#about{
+	padding: 15% 35px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;	
+}
+#about h2{
+	font-weight: 600;
+	/*font-size: 20px;*/
+	margin-bottom: 20px;
+	color: #454546;
+	text-transform: uppercase;
+}
+#contact{
+	padding: 10% 35px 0px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;	
+}
+#contact h2{
+	font-weight: 600;
+	/*font-size: 20px;*/
+	margin-bottom: 20px;
+	color: #454546;
+	text-transform: uppercase;
+}
+#contact p{
+	color: #767676;
+	margin: 10px 10px 50px 10px;
+}
+#contactform{
+	width: 50%;
+	text-align: left;
+	padding-bottom: 10%;
+	margin: 10% auto 15%;
+}
+#month{
+	width: 100%;
+	color: #767676;
+	/*margin: 5px;*/
+	font-size: 13px;
+	text-transform: lowercase;
+}
+#sub-footer{
+	margin-top: 60px;
+	background-color:#2d4e55;
+}
+#blogContent {
+	margin-top: 36px;
+}
+#blogContent1 {
+	margin-top: 36px;
+}
+#blogContent h4{
+	font-family: 'Raleway', serif;
+	font-weight: 300;
+	font-size: 22px;
+	color: #e3e7e8;
+	margin-bottom: 50px;
+}
+#blogContent1 h4{
+	font-family: 'Raleway', serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: #e3e7e8;
+	margin-bottom: 50px;
+}
+#blogContent p{
+	font-size: 15px;
+	color: #e3e7e8;
+}
+#blogContent1 p{
+	font-size: 15px;
+	color: #e3e7e8;
+}
+#quickLinks {
+ margin-top: 36px;
+}
+#quickLinks li a{
+	font-size: 14px;
+	color: #e3e7e8;
+	margin-bottom: 6px;
+}
+#footerSocials{
+	font-family: 'Raleway', serif;
+	/*float: right;*/
+}
+#footerSocials ul{
+	/*float: right;*/
+	margin-top: 36px;
+}
+#footerSocials ul li{
+	/*float: left;*/
+	color: #e3e7e8;
+}
+#footerSocials ul li a{
+	padding: 10px;
+	margin: 10px;
+	color: #575757 ;
+	text-decoration: none; 
+	font-size: 15px;
+	background-color: #ffffff;
+	border-radius: 100%;
+}
