@@ -1,13 +1,13 @@
 /*
-Theme Name: Hungry Bytes
-Theme URI: 
+Theme Name: Dungeon Mastery
+Theme URI: https://github.com/renzo324/wordpress-theme-from-scratch
 Author: Lorenzo Ibay
-Author URI: https://lorenzoibay.com/
-Description: I tried
+Author URI: https://github.com/renzo324
+Description: Theme for running Dungeons and dragons Campaigns
 Version: 1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: Hungry Bytes
+Text Domain: Dungeon Mastery
 Tags: custom-background
 */
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,600');
@@ -21,7 +21,7 @@ a{
 	margin: 0 1px;
 }
 
-.wp-caption{
+/* .wp-caption{
 
 }
 .wp-caption-text{
@@ -33,7 +33,7 @@ a{
 .bypostauthor{}
 .alignright{}
 .alignleft{}
-.aligncenter{}
+.aligncenter{} */
 .size-auto, 
 .size-full,
 .size-large,
