@@ -41,3 +41,4 @@ function wpse_theme_setup() {
                 </div>
             </nav>
         </div>
+</div>
