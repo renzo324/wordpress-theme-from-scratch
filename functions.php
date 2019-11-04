@@ -232,7 +232,6 @@ if( @$background == 1 ){
 	  Redirect Users
 	========================
 
-*/
 add_action( 'template_redirect', function(){
 
     // no non-authenticated users allowed
@@ -242,3 +241,5 @@ add_action( 'template_redirect', function(){
         exit();
     }
 });
+
+*/
