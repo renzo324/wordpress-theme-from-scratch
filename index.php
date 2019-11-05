@@ -54,27 +54,26 @@ if ($loop -> have_posts()) {
         $output .= get_the_content();
 		echo $output;   
     }
-//     echo '
-//     <div class="modal in" style="display: block;">
-//   <div class="modal-dialog">
-//     <div class="modal-content">
-//       <div class="modal-header">
-//         <h4 class="modal-title">Are you sure?</h4>
-//       </div>
-//       <div class="modal-body">
-//         <p>Are you sure you want to view this website?</p>
-//         <div class="row">
-//             <div class="col-12-xs text-center">
-//                 <button class="btn btn-success btn-md">Yes</button>
-//                 <button class="btn btn-danger btn-md">No</button>
-//             </div>
-//         </div>
-//       </div>
-   
-//     </div><!-- /.modal-content -->
-//   </div><!-- /.modal-dialog -->
-// </div><!-- /.modal -->
-//     ';
+    echo '
+    <div class="modal fade" id="landingPopUp" tabindex="-1" role="dialog" aria-labelledby="landingPopUpTitle" aria-hidden="true" style="display: block;">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="landingPopUpTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div> ';
 }
 
 ?>
