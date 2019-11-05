@@ -14,7 +14,7 @@ if ($loop -> have_posts()) {
     while ($loop -> have_posts()){
         $loop->the_post();
         $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID));
-        $output = '<hr><h2>'.get_the_title().'</h2><hr>';
+        $output = '<hr><div class="mx-auto" style="width: 200px;"><h2>'.get_the_title().'</h2></div><hr>';
         $output .= get_the_post_thumbnail();
         $output .= get_the_content();
 		echo $output;
@@ -40,7 +40,8 @@ if ($loop -> have_posts()) {
 
     // WP_Query arguments
     $args = array(
-        'p'                      => '1',
+        // 'p'                      => '1',
+        'category_name'          => 'world',
         'order'                  => 'ASC',
         'orderby'                => 'id',
     );
@@ -49,7 +50,7 @@ if ($loop -> have_posts()) {
     $fallBackLoop = new WP_Query($args);
     if($fallBackLoop -> have_posts()){
         $fallBackLoop ->the_post();
-        $output = '<hr><h2>'.get_the_title().'</h2><hr>';
+        $output = '<hr><div class="mx-auto" style="width: 200px;"><h2>'.get_the_title().'</h2></div><hr>';
         $output .= get_the_post_thumbnail();
         $output .= get_the_content();
 		echo $output;   
