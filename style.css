@@ -22,7 +22,7 @@ a{
 body{
 	background-color: #A5A2AB !important;
 }
-/* .wp-caption{
+.wp-caption{
 
 }
 .wp-caption-text{
@@ -34,7 +34,7 @@ body{
 .bypostauthor{}
 .alignright{}
 .alignleft{}
-.aligncenter{} */
+.aligncenter{} 
 .size-auto, 
 .size-full,
 .size-large,
