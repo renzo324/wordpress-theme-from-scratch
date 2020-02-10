@@ -203,7 +203,7 @@ add_action('wp_enqueue_scripts', 'dungeon_mastery_enqueue_scripts');
 
 /*	
 	========================
-		THEME SUPPORT OPTIONS
+	  THEME SUPPORT OPTIONS
 	========================
 */
 
@@ -226,3 +226,20 @@ $background = get_option( 'custom_background' );
 if( @$background == 1 ){
 	add_theme_support( 'custom-background' );
 }
+
+/*
+	========================
+	  Redirect Users
+	========================
+
+add_action( 'template_redirect', function(){
+
+    // no non-authenticated users allowed
+    if( ! is_user_logged_in() )
+    {
+        wp_redirect( home_url( '/wp-login.php' ), 302 );
+        exit();
+    }
+});
+
+*/
