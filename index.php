@@ -1,17 +1,17 @@
- <?php add_theme_support( $feature ); ?>
-<?php get_header(); ?>
-<div class="container">
-
 <?php
-    if ( have_posts() ) :
-        while ( have_posts() ) :
-            the_post();
-            // the_title();
-            the_content();
-        endwhile; // end while
-    endif; // end if
-?>
-<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-   <!-- Post stuff -->
-</div>
-    <?php get_footer(); ?>
+
+if( ! defined ('ABSPATH') ){
+    exit; //exit if accessed directly
+}
+
+get_header();
+
+$DM_where_are_we = function_exists('DM_gives_location');
+
+
+if(is_singular() ){
+    if (!$DM_where_are_we || DM_gives_location('single')){
+        get_template_part('assets/templates/single');
+    }
+}
+get_footer();
