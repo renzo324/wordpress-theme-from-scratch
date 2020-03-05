@@ -9,3 +9,4 @@ to be paired with the DM-Tools plugin for note and player access management
 - create user interface for inventory management
 - create character management fucntionality that would sync with wp posts
 - create WP Rest backend for API integration with javascript
+- Add woo commerce support for in game shops
